@@ -1,6 +1,13 @@
 <!-- En esta sección se estudia el uso de section and articles -->
 <!--Cada article puede contener su propio header and footer -->
 
+<!-- Tanto cada section como article pueden contener su propio header and footer -->
+
+<!-- Section contenedor de contenido relacionado. Ej: Colores, Noticias -->
+<!-- Article conetenedor de contenido independiente. Ej. Rojo, Azul, Noticia 1, Noticia 2 -->
+<!-- Aside, contenido No estrictamente relacionado. Ej. Link invitacion para visitar otra página-->
+
+<!-- Aside puede estar adentro o afuera del main -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -16,10 +23,17 @@
         <h1>NOTICIAS NACIONALES</h1>
     </header>
 
+<!-- Aside puede estar adentro o afuera del main -->
+    <aside>Aside Tag 1 - Visita esta página!</aside>
+
+
     <main>
+        <aside>Aside Tag 2 - Visita esta página!</aside>
         
+        <!-- Parte de codigo para: Section principal y article como secundario -->
+
         <section>
-            <h1>Section como contenedor</h1>
+            <h1>Section tag como contenedor</h1>
 
             <h2>
                 Noticias del día
@@ -54,6 +68,36 @@
 
             </article>
         </section>
+
+
+
+<!-- Parte de codigo para: Article principal y Section como secundario -->
+
+        <article>
+          
+            <h2>Navegadores más utilizados en 2021</h2>  
+
+            <section>
+                <header>
+                    <h3>Chrome</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, provident iste, aliquid minima tenetur reprehenderit tempore praesentium, perspiciatis eum delectus aut ullam expedita amet harum soluta. Est doloribus sunt dolore.</p>
+                
+                <footer>Usado en 2021</footer>
+            </section>
+
+            <section>
+                <header>
+                    <h3>Firefox</h3>
+                </header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id repellendus totam reiciendis temporibus est eaque, eligendi illum ab! Rem totam hic unde eveniet soluta voluptatibus nulla provident dolorum laborum debitis?</p>
+                <footer>Usado en 2021</footer>
+
+            </section>
+
+        </article>
+
+
 
     </main>
 
