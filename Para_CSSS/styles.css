@@ -1,8 +1,5 @@
-h1{
-    color:brown;
-}
-
-section p{
-    color:blueviolet
-
+.caja{
+    width: 90vw;
+    height: 90vh;
+    background-color: tomato;
 }
