@@ -1,0 +1,32 @@
+.contenedor{
+    height: 90vh;
+    width:90vw;
+    border: 0.5rem solid lightgray;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja{
+    padding: 1rem;
+    height:100%;
+    width:100%;
+    background-color: tomato;
+}
+
+/* con la siguiente instrucción se aplica el css sólo en el segundo elemento sin necesidad de adicionar clases o identificadores*/
+
+.caja:nth-last-of-type(2){
+    background-color: dodgerblue;
+}
+
+/* Aplicación del QUERY - responsive design */
+@media screen and (max-width: 650px){
+    /* si el viewer sobre pasa los 650 pixeles el contenedor cambia */
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+}
